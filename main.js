@@ -62,6 +62,16 @@ const pies = [
       domString += '</div>';
       //print them to the dom
       printToDom("pie-zone", domString);
-  }
+}
 
-  cardBuilder(pies);
+const buttonClickEvent = (e) => {
+      const instructorName = e.target.id;
+      console.log(instructorName);
+      }
+
+
+document.getElementById('zoe').addEventListener('click', buttonClickEvent);
+document.getElementById('michael').addEventListener('click', buttonClickEvent);
+document.getElementById('callan').addEventListener('click', buttonClickEvent);
+
+cardBuilder(pies);
